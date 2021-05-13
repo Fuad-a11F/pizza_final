@@ -33,7 +33,7 @@ export default function Main() {
             </header>
             <main>
                 <div className="container">
-                    <h2 className="main">Все пиццы</h2>         
+                    <h2 className="main">Все пиццы!</h2>         
                     <CardItems />
                     <Pagination />
                 </div>           
