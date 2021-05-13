@@ -1,0 +1,150 @@
+{
+    "pizza": [
+        {
+            "id": 1,
+            "image": "https://i.ibb.co/VqVP0mB/4.jpg",
+            "name": "Чизбургер-пицца",
+            "price": 359,
+            "count_order": 0,
+            "type": "Мясные",
+            "animation": true
+        },
+        {
+            "id": 2,
+            "image": "https://i.ibb.co/s153HPt/1.png",
+            "name": "Двойная пепперони",
+            "price": 449,
+            "count_order": 0,
+            "type": "Вегетерианская",
+            "animation": true
+        },
+        {
+            "id": 3,
+            "image": "https://i.ibb.co/BqmxhQf/2.png",
+            "name": "Супермясная",
+            "price":  445,
+            "count_order": 0,
+            "type": "Гриль",
+            "animation": true
+        },
+
+
+        {
+            "id": 4,
+            "image": "https://i.ibb.co/s153HPt/1.png",
+            "name": "Пепперони фреш",
+            "price": 449,
+            "count_order": 0,
+            "type": "Вегетерианская",
+            "animation": true
+        },
+        {
+            "id": 5,
+            "image": "https://i.ibb.co/BqmxhQf/2.png",
+            "name": "Сырная",
+            "price":  445,
+            "count_order": 0,
+            "type": "Гриль",
+            "animation": true
+        },
+        {
+            "id": 6,
+            "image": "https://i.ibb.co/s153HPt/1.png",
+            "name": "Ветчина и сыр",
+            "price": 449,
+            "count_order": 0,
+            "type": "Мясные",
+            "animation": true
+        },
+        {
+            "id": 7,
+            "image": "https://i.ibb.co/BqmxhQf/2.png",
+            "name": "Ветчина и грибы",
+            "price":  445,
+            "count_order": 0,
+            "type": "Гриль",
+            "animation": true
+        },
+        {
+            "id": 8,
+            "image": "https://i.ibb.co/s153HPt/1.png",
+            "name": "Маргарита",
+            "price": 449,
+            "count_order": 0,
+            "type": "Вегетерианская",
+            "animation": true
+        },
+        {
+            "id": 9,
+            "image": "https://i.ibb.co/BqmxhQf/2.png",
+            "name": "Пепперони",
+            "price":  445,
+            "count_order": 0,
+            "type": "Мясные",
+            "animation": true
+        },
+        {
+            "id": 10,
+            "image": "https://i.ibb.co/BqmxhQf/2.png",
+            "name": "Чиззи чеддер",
+            "price":  445,
+            "count_order": 0,
+            "type": "Закрытые",
+            "animation": true
+        },
+        {
+            "id": 11,
+            "image": "https://i.ibb.co/s153HPt/1.png",
+            "name": "Цезарь",
+            "price": 449,
+            "count_order": 0,
+            "type": "Острые",
+            "animation": true
+        },
+        {
+            "id": 12,
+            "image": "https://i.ibb.co/BqmxhQf/2.png",
+            "name": "Карбонара",
+            "price":  445,
+            "count_order": 0,
+            "type": "Закрытые",
+            "animation": true
+        },
+        {
+            "id": 13,
+            "image": "https://i.ibb.co/s153HPt/1.png",
+            "name": "Нежный лосось",
+            "price": 449,
+            "count_order": 0,
+            "type": "Мясные",
+            "animation": true
+        },
+        {
+            "id": 14,
+            "image": "https://i.ibb.co/BqmxhQf/2.png",
+            "name": "Четыре сыра",
+            "price":  445,
+            "count_order": 0,
+            "type": "Гриль",
+            "animation": true
+        },
+        {
+            "id": 15,
+            "image": "https://i.ibb.co/s153HPt/1.png",
+            "name": "Цыпленок барбекю",
+            "price": 449,
+            "count_order": 0,
+            "type": "Острые",
+            "animation": true
+        },
+        {
+            "id": 16,
+            "image": "https://i.ibb.co/BqmxhQf/2.png",
+            "name": "Пицца-пирог",
+            "price":  445,
+            "count_order": 0,
+            "type": "Острые",
+            "animation": true
+        }
+    ]  
+}       
