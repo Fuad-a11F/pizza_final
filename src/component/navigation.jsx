@@ -9,10 +9,10 @@ export default function Navigation() {
     let sortBy = useSelector(state => state.rootReducer.sort) 
     return (
         <>
-            <div className="header__column header__row">
+            <div className="header__column header__row  phone-UI">
                 <NavItems items={['Мясные','Вегетерианская','Гриль','Острые','Закрытые']}/>
             </div>
-            <div className="header__column">
+            <div className="header__column sorted">
                 <span className="header__sort">Сортировка по: </span><button onClick={() => setPress(!press)} className="header__sort-btn">{sortBy}</button>
                 <Tab items={['популярности', 'по цене', 'по алфавиту']} setPress={setPress} press={press}/>
             </div>

@@ -236,6 +236,7 @@ color: #181818;
   grid-row-gap: 60px;
   justify-items: center;
 }
+
 .main__title {
   font-family: Proxima Nova;
   font-style: normal;
@@ -563,6 +564,10 @@ ol, ul {
 }
 
 
+
+
+
+
 @media(max-width: 1180px) {
   .black-btn button {
     padding: 0 20px;
@@ -575,7 +580,10 @@ ol, ul {
   }
 }
 
-
+.sorted {
+  margin-left: 40px;
+  white-space:nowrap
+}
 @media(max-width: 1080px) {
   .black-btn button {
     padding: 0 14px;
@@ -587,6 +595,14 @@ ol, ul {
   .main__grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .phone-UI  {
+    flex-wrap: wrap;
+    justify-content:flex-start;
+  }
+  .phone-UI:last-child  {
+    margin: 0;
+  }
 }
 
 
@@ -595,6 +611,26 @@ ol, ul {
     grid-template-columns: 1fr 1fr;
   }
 }
+@media(max-width: 770px) {
+  .phone-UI  {
+    justify-content: center;
+  }
+  .wrapper {
+    margin:  25px 0 25px  30px;
+    width: calc(100vw  -  60px);
+  }
+  
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .sorted {
+    margin-top: 20px;
+  }
+}
+
+
 
 @media(max-width: 640px) {
   .main__grid {
@@ -604,62 +640,17 @@ ol, ul {
   .row-all {
     flex-direction: column;
   }
+
+  .header__button {
+    width: 125px;
+    margin-left: 25px;
+  }
 }
 
 
-.btn-active button{
-  background-color: #2C2C2C;
-  color: white;
-}
-
-.header__ul li:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.absolute {
-  display: inline;
-  top: 10px;
-  right: 48px;
-  z-index: 4;
-}
-
-.margin {
-  margin-right: 10px;
-  color: red;
-  background-color: red;
-}
-
-.pagination  {
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
-}
-
-
-.pagination__item {
-  list-style: none;
-  display: inline-block;
-  border: 1px solid #EB5A1E;
-  color: #EB5A1E;
-  border-radius: 50%;
-  padding-left: 9px;
-  padding-top: 1px;
-  height: 30px;
-  width: 30px;
-  font-size: 17px;
-  font-weight: 600;
-  margin-left: 10px;
-}
-.pagination__item:first-child {
-  margin-left: 0px;
-}
-.active-item  {
-  background-color: #EB5A1E;
-  color: #fff;
-}
-.pagination__item:hover {
-  background-color: #EB5A1E;
-  color: #fff;
-  cursor: pointer;
+@media (max-width: 480px) {
+  .wrapper {
+    margin:  10px 0 10px  20px;
+    width: calc(100vw  -  35px);
+  }
 }
