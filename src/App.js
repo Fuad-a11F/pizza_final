@@ -39,9 +39,9 @@ function App() {
   React.useEffect( async () => {
     setState(true)
     dispatch(for_update_pizza())
-    await fetch(`http://localhost:3004/pizza?${category !== "Все" ? 'type='+category : ''}&_sort=${sort}&_order=desc&_limit=5&_page=${now_page}`).then(data => data.json())
+    await fetch(`http://localhost:3001/pizza?${category !== "Все" ? 'type='+category : ''}&_sort=${sort}&_order=desc&_limit=5&_page=${now_page}`).then(data => data.json())
     .then(data => dispatch(set_pizzes(data)))
-    await fetch(`http://localhost:3004/pizza?${category !== "Все" ? 'type='+category : ''}`).then(data => data.json())
+    await fetch(`http://localhost:3001/pizza?${category !== "Все" ? 'type='+category : ''}`).then(data => data.json())
     .then(data => dispatch(set_pages(data.length)))
     setState(false)
   }, [category, sortBy, now_page])
