@@ -4,8 +4,8 @@ const  router =  JsonServer.router('./public/pizza.json');
 const middlewares  =  JsonServer.defaults({
     static: './build',
 });
-
-const  PORT = process.env.PORT  || 3001;
+console.log('kek')
+const  PORT = process.env.PORT || 3001;
 
 server.use(middlewares);
 server.use(router);
