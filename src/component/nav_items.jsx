@@ -1,6 +1,6 @@
 import React from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { filter_pizzes } from "../redux/actions"
+import { clean_order, filter_pizzes } from "../redux/actions"
 import { set_now_page } from "../redux/actions"
 
 
@@ -13,6 +13,7 @@ export default function NavItems({ items }) {
     function change_filter(item) {
         dispatch(filter_pizzes(item))
         dispatch(set_now_page(1))
+        dispatch(clean_order())
     }
 
     return (

@@ -7,7 +7,10 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
+.btn-active button{
+  background-color:#181818;
+  color: white
+}
 button {
   outline: none;
   border: none;
@@ -293,6 +296,7 @@ color: #181818;
 }
 .main__column {
   max-width: 286px;
+
 }
 .input-long {
   grid-column: 1/4;
@@ -563,10 +567,46 @@ ol, ul {
   border: 1px solid #D0D0D0
 }
 
+.pagination  {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
 
+.pagination__item {
+  display: inline-block;
+  margin-left: 20px;
+  border: 1px solid #FE5F1E;
+  width: 30px;
+  height: 30px;
+  color: #FE5F1E;
+  font-size: 17px;
+  text-align: center;
+  padding: 1px 1px 0 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
+.active-item {
+  background-color: #FE5F1E;
+  color: white
+}
 
+.pagination__item:first-child {
+  margin-left: 0px;
+}
 
+.clone_image {
+  position: fixed;
+  opacity: 1;
+  transition: all 2s ease 0s;
+  z-index: 120;
+}
+
+.alert {
+  position: relative;
+  z-index: 100
+}
 
 @media(max-width: 1180px) {
   .black-btn button {
@@ -604,8 +644,6 @@ ol, ul {
     margin: 0;
   }
 }
-
-
 @media(max-width: 900px) {
   .main__grid {
     grid-template-columns: 1fr 1fr;
@@ -629,9 +667,6 @@ ol, ul {
     margin-top: 20px;
   }
 }
-
-
-
 @media(max-width: 640px) {
   .main__grid {
     grid-template-columns: 1fr;
@@ -646,8 +681,6 @@ ol, ul {
     margin-left: 25px;
   }
 }
-
-
 @media (max-width: 480px) {
   .wrapper {
     margin:  10px 0 10px  20px;

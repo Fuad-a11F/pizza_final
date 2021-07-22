@@ -10,7 +10,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Card({pizza_array, add_to_bucket, pizza_bucket, change_size, change_form}) {
 
-    function add_bucket(id) {
+    function add_bucket(e, id) {
+
         add_to_bucket(id)
     }
 
@@ -30,7 +31,7 @@ function Card({pizza_array, add_to_bucket, pizza_bucket, change_size, change_for
                     </div> 
                     <div className="main__row">
                         <div className="main__price">от {item.price}P</div>
-                        <button onClick={() => add_bucket(item.id)} className="main__btn orange-btn">Добавить {item.count_order !==  0 && item.count_order }</button>              
+                        <button onClick={(e) => add_bucket(e, item.id)} className="main__btn orange-btn">Добавить {item.count_order !==  0 && item.count_order }</button>              
                     </div>
                 </div>
             )

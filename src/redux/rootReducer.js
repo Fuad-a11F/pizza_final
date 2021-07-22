@@ -222,7 +222,7 @@ export function rootReducer(state = initialState, action) {
             return {...state,  sort: action.payload}
 
         case  'SET_PAGES':
-            let page = Math.ceil(action.payload / 5)
+            let page = Math.ceil(action.payload / 8)
             return {...state, pages: page}
 
         case 'NOW_PAGE':

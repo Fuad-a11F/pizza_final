@@ -16,9 +16,9 @@ export default function Main() {
 
     return (
         <>
-            {flag && <Alert flag={flag}><img style={{position: 'relative', top: '-2px', left: '-3px'}} src={ok} height='18' width='20' alt="" />Добавлено</Alert>}
-            {flag_1 && <Alert flag={flag_1} danger={true}><span className='btn-close margin'>X</span> Нельзя добавлять больше 10 элементов</Alert>}
-            {flag_2 && <Alert flag={flag_2} danger={true}><span className='btn-close margin'>X</span> Необходимо указать параметры</Alert>}
+            {flag && <Alert className='alert' flag={flag}><img style={{position: 'relative', top: '-2px', left: '-3px'}} src={ok} height='18' width='20' alt="" />Добавлено</Alert>}
+            {flag_1 && <Alert className='alert' flag={flag_1} danger={true}><span className='btn-close margin'>X</span> Нельзя добавлять больше 10 элементов</Alert>}
+            {flag_2 && <Alert className='alert' flag={flag_2} danger={true}><span className='btn-close margin'>X</span> Необходимо указать параметры</Alert>}
             
             <header className="header">
                 <div className="container">          
