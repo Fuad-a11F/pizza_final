@@ -1,1 +1,1 @@
-# ПЕРВОЕ РЕАКТ ПРИЛОЖЕНИЕ С ФЕЙКОВОЙ БАЗОЙ ДАННЫЙ
+# The first meaningful React app. Made it from a video tutorial on the Internet.
