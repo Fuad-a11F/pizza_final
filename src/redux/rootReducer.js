@@ -67,8 +67,6 @@ export function rootReducer(state = initialState, action) {
                 return {...state, alert_1:true, pizza:count_order_change, pizza_bucket: newA}
             }
 
-            return state
-
         case CHANGE_SIZE:
             let size  = state.pizza.map(item => {
                 if (item.id === action.id) {
