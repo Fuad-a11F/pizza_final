@@ -27,7 +27,6 @@ export default function Tab({press, setPress, items}) {
                 {items.map((item, index)  => {
                     return <li key={index} onClick={() => change_label(item)} className="tab-open">{item}</li>
                 })}
-
             </ul>
         </div>
     )

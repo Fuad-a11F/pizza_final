@@ -221,8 +221,9 @@ color: #181818;
   margin-top: 0px;
 }
 
-
-
+.tab-open {
+  cursor: pointer;
+}
 
 .navigation  {
   margin-top: 60px;
