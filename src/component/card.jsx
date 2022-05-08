@@ -3,12 +3,11 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {add_to_bucket} from '../redux/actions'
 import {change_size} from '../redux/actions'
-import { useSelector } from "react-redux"
 import {change_form} from '../redux/actions'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-function Card({pizza_array, add_to_bucket, pizza_bucket, change_size, change_form}) {
+function Card({pizza_array, add_to_bucket, change_size, change_form}) {
 
     function add_bucket(e, id) {
 

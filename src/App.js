@@ -44,7 +44,7 @@ function App() {
     axios.get(`http://localhost:3001/pizza_pages?${category !== "Все" ? 'type='+category : ''}`)
     .then(data => dispatch(set_pages(data.data)))
     setState(false)
-  }, [category, sortBy, now_page])
+  }, [category, sortBy, now_page, dispatch, sort])
 
 
   return (   

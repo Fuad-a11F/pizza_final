@@ -1,6 +1,3 @@
-import img from "../img/image2.png"; 
-import img1 from "../img/image22.jpg"; 
-import img2 from "../img/image211.jpg"; 
 import { ADD_TO_THE_BUCKET, CHANGE_SIZE,CHANGE_ANIM, CHANGE_FORM, DELETE_FROM_PIZZA_BUCKER, CHANGE_BUY_MINUS  } from "./types";
 import {CLEAR_BUCKET, SHOW_ALERT,SET_PIZZES, HIDE_ALERT, SHOW_ALERT_1, CHANGE_BUY_PLUS, FILTER_PIZZES, DELETE_FORM_SIZE} from './types'
 

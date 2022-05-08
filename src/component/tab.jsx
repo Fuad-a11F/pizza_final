@@ -19,7 +19,7 @@ export default function Tab({press, setPress, items}) {
     React.useEffect(() => {
         if (press) window.addEventListener('click', hidden_tab);
         return ()  => window.removeEventListener('click', hidden_tab);
-    }, [press]);
+    }, [press, hidden_tab]);
 
     return (
         <div ref={ref_tab} className={press ? 'header__tab tab-open visible' : 'header__tab tab-open'}>
