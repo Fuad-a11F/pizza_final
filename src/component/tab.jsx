@@ -5,9 +5,6 @@ import { set_label } from "../redux/actions"
 export default function Tab({press, setPress, items}) {
     let ref_tab  = React.useRef()
     let dispatch =  useDispatch()
-    function hidden_tab(e) {
-        if  (!e.target.classList.contains('tab-open')) setPress(false)
-    }
  
     function change_label(item) {
         dispatch(set_label(item))
@@ -16,9 +13,13 @@ export default function Tab({press, setPress, items}) {
     }
 
     React.useEffect(() => {
+        function hidden_tab(e) {
+            if  (!e.target.classList.contains('tab-open')) setPress(false)
+        }
+
         if (press) window.addEventListener('click', hidden_tab);
         return ()  => window.removeEventListener('click', hidden_tab);
-    }, [press, hidden_tab]);
+    }, [press]);
 
     return (
         <div ref={ref_tab} className={press ? 'header__tab tab-open visible' : 'header__tab tab-open'}>

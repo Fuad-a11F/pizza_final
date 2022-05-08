@@ -96,7 +96,9 @@ export function rootReducer(state = initialState, action) {
                 if (item.bucket_id !== action.payload.id) {
                     return item
                 }
-            } );
+
+                return false
+            });
             let temp1 = state.pizza_bucket.filter((el) => el.bucket_id === action.payload.id);
             let order_change = state.pizza.map(item => {
                 if (item.id === temp1[0].id) {         
