@@ -1,11 +1,10 @@
 import React from "react"
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch } from "react-redux"
 import { set_label } from "../redux/actions"
 
 export default function Tab({press, setPress, items}) {
     let ref_tab  = React.useRef()
     let dispatch =  useDispatch()
-    let now_page =  useSelector(state => state.rootReducer.now_page)
     function hidden_tab(e) {
         if  (!e.target.classList.contains('tab-open')) setPress(false)
     }
