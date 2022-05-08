@@ -36,12 +36,12 @@ function App() {
       break;
   }
 
-  React.useEffect( async () => {
+  React.useEffect( () => {
     setState(true)
     dispatch(for_update_pizza())
-    await axios.get(`http://localhost:3001/pizza?${category !== "Все" ? 'type='+category : ''}&_sort=${sort}&_page=${now_page}`) // &_order=desc&_limit=8
+    axios.get(`http://localhost:3001/pizza?${category !== "Все" ? 'type='+category : ''}&_sort=${sort}&_page=${now_page}`) // &_order=desc&_limit=8
     .then(data => dispatch(set_pizzes(data.data)))
-    await axios.get(`http://localhost:3001/pizza_pages?${category !== "Все" ? 'type='+category : ''}`)
+    axios.get(`http://localhost:3001/pizza_pages?${category !== "Все" ? 'type='+category : ''}`)
     .then(data => dispatch(set_pages(data.data)))
     setState(false)
   }, [category, sortBy, now_page])
